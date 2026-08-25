@@ -1,0 +1,134 @@
+.craft-page {
+  background: var(--color-paper);
+}
+
+/* ---- Hero ---- */
+.craft-hero {
+  position: relative;
+  min-height: 68vh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.craft-hero__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.craft-hero__scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(23, 30, 51, 0.78), rgba(23, 30, 51, 0.12) 60%);
+}
+
+.craft-hero__content {
+  position: relative;
+  padding-block: clamp(3rem, 8vw, 6rem);
+  color: var(--color-ivory);
+}
+
+.craft-hero__content .eyebrow {
+  color: var(--color-powder-blue);
+}
+
+.craft-hero__title {
+  font-size: clamp(2.6rem, 6vw, 5rem);
+  max-width: 16ch;
+}
+
+.craft-hero__sub {
+  margin-top: 1rem;
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  color: rgba(248, 243, 233, 0.85);
+}
+
+/* ---- Timeline ---- */
+.craft-timeline {
+  padding-block: clamp(4rem, 9vw, 8rem);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3rem, 8vw, 6rem);
+}
+
+.craft-stage {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.craft-stage--reverse {
+  direction: rtl;
+}
+.craft-stage--reverse > * {
+  direction: ltr;
+}
+
+.craft-stage__image {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 2px;
+  border: 1px solid rgba(62, 42, 32, 0.12);
+}
+
+.craft-stage__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.craft-stage__order {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--color-terracotta);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+.craft-stage__name {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 1rem;
+}
+
+.craft-stage__note {
+  max-width: 42ch;
+  font-size: 1.05rem;
+  color: rgba(33, 26, 20, 0.78);
+}
+
+@media (max-width: 780px) {
+  .craft-stage,
+  .craft-stage--reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+}
+
+/* ---- CTA ---- */
+.craft-cta {
+  background: var(--color-indigo-deep);
+  color: var(--color-ivory);
+  text-align: center;
+}
+
+.craft-cta__inner {
+  max-width: 640px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.craft-cta__title {
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+}
+
+.craft-cta__body {
+  color: rgba(248, 243, 233, 0.78);
+}

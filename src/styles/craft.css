@@ -1,0 +1,76 @@
+.craft {
+  background: var(--color-cream);
+}
+
+.craft__head {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+}
+
+.craft__title {
+  font-size: clamp(1.9rem, 3.8vw, 2.9rem);
+  flex: 1;
+}
+
+.craft__link {
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  color: var(--color-terracotta);
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+}
+
+.craft__strip {
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  display: flex;
+  gap: 1.4rem;
+  overflow-x: auto;
+  padding-inline: var(--gutter);
+  padding-bottom: 1rem;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+}
+
+.craft__card {
+  flex: 0 0 clamp(220px, 26vw, 300px);
+  scroll-snap-align: start;
+}
+
+.craft__image {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border-radius: 2px;
+  background: var(--color-beige);
+}
+
+.craft__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-editorial);
+}
+
+.craft__card:hover .craft__image img {
+  transform: scale(1.05);
+}
+
+.craft__order {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  letter-spacing: var(--tracking-label);
+  color: var(--color-terracotta);
+}
+
+.craft__name {
+  margin-top: 0.35rem;
+  font-size: 1.3rem;
+}
+
+.craft__note {
+  margin-top: 0.4rem;
+  font-size: 0.92rem;
+  color: rgba(33, 26, 20, 0.68);
+}

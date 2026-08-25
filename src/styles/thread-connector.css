@@ -1,0 +1,16 @@
+.thread-connector {
+  position: relative;
+  height: 96px;
+  background: var(--color-ivory);
+}
+
+.thread-connector .thread-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  height: 100%;
+  transform: translateX(-50%);
+  overflow: visible;
+}

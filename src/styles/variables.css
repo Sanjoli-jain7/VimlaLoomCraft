@@ -1,0 +1,37 @@
+:root {
+  /* ---- Brand palette (edit here to restyle the whole site) ---- */
+  --color-indigo: #232C47;
+  --color-indigo-deep: #171E33;
+  --color-powder-blue: #A9C2D6;
+  --color-ivory: #F8F3E9;
+  --color-cream: #EFE6D4;
+  --color-terracotta: #B85C38;
+  --color-beige: #D9CBB2;
+  --color-teak: #3E2A20;
+  --color-brass: #A5824F;
+
+  --color-ink: #211A14;
+  --color-paper: var(--color-ivory);
+
+  /* ---- Type ---- */
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-accent: 'Cormorant Garamond', 'Fraunces', serif;
+  --font-body: 'Jost', 'Helvetica Neue', sans-serif;
+
+  --tracking-label: 0.18em;
+
+  /* ---- Layout ---- */
+  --container-max: 1440px;
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+  --section-space: clamp(4rem, 10vw, 9rem);
+
+  /* ---- Motion ---- */
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Palette intentionally stays consistent — this is a heritage
+       brand, not a UI that should invert at night. */
+  }
+}

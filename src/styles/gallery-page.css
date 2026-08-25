@@ -1,0 +1,176 @@
+.gallery-page {
+  background: var(--color-paper);
+}
+
+.gallery-hero {
+  padding-top: 9rem;
+  padding-bottom: clamp(2.5rem, 6vw, 4rem);
+  background-color: var(--color-indigo-deep);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='84'%3E%3Cg fill='none' stroke='%23A5824F' stroke-width='0.7' opacity='0.16'%3E%3Cpath d='M42 4 L74 42 L42 80 L10 42 Z'/%3E%3Ccircle cx='42' cy='42' r='16'/%3E%3C/g%3E%3C/svg%3E");
+  color: var(--color-ivory);
+}
+
+.gallery-hero__title {
+  font-family: var(--font-accent);
+  font-weight: 600;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  max-width: 18ch;
+}
+
+.gallery-hero__body {
+  margin-top: 0.9rem;
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: var(--color-powder-blue);
+  max-width: 46ch;
+}
+
+.gallery-grid {
+  padding-block: clamp(2.5rem, 6vw, 4rem);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  border: 1px solid rgba(165, 130, 79, 0.4);
+  box-shadow: 0 14px 30px rgba(62, 42, 32, 0.1);
+  background: var(--color-ink);
+  transition: box-shadow 0.5s var(--ease-editorial), transform 0.5s var(--ease-editorial);
+}
+
+.gallery-item:hover,
+.gallery-item:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 40px rgba(62, 42, 32, 0.18);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(0.4) contrast(1.02);
+  transition: transform 0.7s var(--ease-editorial), filter 0.7s var(--ease-editorial);
+}
+
+.gallery-item__scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(23, 30, 51, 0.78) 0%, rgba(23, 30, 51, 0) 55%);
+  opacity: 0;
+  transition: opacity 0.5s var(--ease-editorial);
+}
+
+.gallery-item__caption {
+  position: absolute;
+  left: 1rem;
+  bottom: 0.9rem;
+  right: 1rem;
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--color-ivory);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.5s var(--ease-editorial), transform 0.5s var(--ease-editorial);
+}
+
+.gallery-item:hover img,
+.gallery-item:focus-within img {
+  transform: scale(1.06);
+  filter: grayscale(0) contrast(1.05);
+}
+
+.gallery-item:hover .gallery-item__scrim,
+.gallery-item:focus-within .gallery-item__scrim {
+  opacity: 1;
+}
+
+.gallery-item:hover .gallery-item__caption,
+.gallery-item:focus-within .gallery-item__caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 860px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.4rem;
+  }
+  .gallery-item__caption {
+    opacity: 1;
+    transform: none;
+  }
+  .gallery-item__scrim {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(23, 30, 51, 0.6) 0%, rgba(23, 30, 51, 0) 45%);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+}
+
+/* ---- Videos ---- */
+.gallery-videos {
+  background: var(--color-cream);
+}
+
+.gallery-videos__title {
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+}
+
+.gallery-videos__grid {
+  margin-top: clamp(2rem, 5vw, 3rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: clamp(1.2rem, 2.5vw, 1.8rem);
+}
+
+.gallery-video {
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid rgba(165, 130, 79, 0.4);
+  box-shadow: 0 14px 30px rgba(62, 42, 32, 0.1);
+  transition: box-shadow 0.5s var(--ease-editorial), transform 0.5s var(--ease-editorial);
+}
+
+.gallery-video:hover,
+.gallery-video:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 40px rgba(62, 42, 32, 0.18);
+}
+
+.gallery-video video {
+  width: 100%;
+  display: block;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  background: var(--color-ink);
+}
+
+.gallery-video__caption {
+  padding: 0.7rem 0.9rem;
+  font-size: 0.9rem;
+  color: rgba(33, 26, 20, 0.7);
+}
+
+.gallery-videos__empty {
+  margin-top: 2rem;
+  padding: clamp(2.5rem, 6vw, 4rem);
+  text-align: center;
+  border: 1px dashed rgba(62, 42, 32, 0.3);
+  border-radius: 2px;
+  color: rgba(33, 26, 20, 0.55);
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: 1.2rem;
+}

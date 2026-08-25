@@ -1,0 +1,146 @@
+.journey {
+  background-color: var(--color-indigo-deep);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='84'%3E%3Cg fill='none' stroke='%23A5824F' stroke-width='0.7' opacity='0.16'%3E%3Cpath d='M42 4 L74 42 L42 80 L10 42 Z'/%3E%3Ccircle cx='42' cy='42' r='16'/%3E%3C/g%3E%3C/svg%3E"),
+    radial-gradient(ellipse at top, rgba(169, 194, 214, 0.1), transparent 60%);
+  color: var(--color-ivory);
+  position: relative;
+}
+
+.journey__ornament {
+  margin-top: 1.4rem;
+  width: 120px;
+}
+
+.journey__ornament-svg {
+  width: 100%;
+  height: 20px;
+  stroke: var(--color-brass);
+  fill: var(--color-brass);
+  stroke-width: 1;
+}
+
+.journey__title {
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  max-width: 16ch;
+}
+
+.journey__track {
+  position: relative;
+  margin-top: clamp(3rem, 8vw, 6rem);
+}
+
+.thread-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  height: 100%;
+  transform: translateX(-50%);
+  overflow: visible;
+}
+
+.journey__row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  padding: clamp(2rem, 5vw, 3.5rem) var(--gutter);
+  max-width: var(--container-max);
+  margin-inline: auto;
+}
+
+.journey__row--reverse {
+  direction: rtl;
+}
+.journey__row--reverse > * {
+  direction: ltr;
+}
+
+.journey__marker {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--color-brass);
+  box-shadow: 0 0 0 4px rgba(165, 130, 79, 0.2);
+  z-index: 2;
+}
+
+.journey__image {
+  aspect-ratio: 5 / 4;
+  overflow: hidden;
+  border-radius: 2px;
+  border: 1px solid rgba(165, 130, 79, 0.55);
+  outline: 1px solid rgba(248, 243, 233, 0.15);
+  outline-offset: -5px;
+  box-shadow: 0 18px 40px rgba(10, 12, 22, 0.35);
+}
+
+.journey__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Per-step focal points — object-position only, never a crop that
+   distorts or stretches the source photograph. Add a new rule here
+   any time a step's photo changes and needs a different focus. */
+.journey__img--arrive {
+  object-position: center 42%;
+}
+.journey__img--welcome {
+  object-position: center 55%;
+}
+.journey__img--discover {
+  object-position: center 40%;
+}
+.journey__img--weave {
+  object-position: center 20%;
+}
+.journey__img--walk {
+  object-position: center 75%;
+}
+.journey__img--eat {
+  object-position: center 60%;
+}
+.journey__img--rest {
+  object-position: center 65%;
+}
+
+.journey__step {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  color: var(--color-brass);
+  display: block;
+}
+
+.journey__line {
+  margin-top: 0.9rem;
+  max-width: 32ch;
+  color: rgba(248, 243, 233, 0.75);
+  font-size: 1.05rem;
+}
+
+@media (max-width: 780px) {
+  .thread-line {
+    left: 1.6rem;
+    transform: none;
+  }
+  .journey__row,
+  .journey__row--reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    padding-left: 3.4rem;
+  }
+  .journey__marker {
+    left: 1.6rem;
+  }
+}

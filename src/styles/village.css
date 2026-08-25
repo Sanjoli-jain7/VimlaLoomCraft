@@ -1,0 +1,41 @@
+.village {
+  background: var(--color-ivory);
+}
+
+.village__title {
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+}
+
+.village__body {
+  font-weight: 500;
+  margin-top: 1.2rem;
+  max-width: 58ch;
+  font-size: 1.08rem;
+  color: rgba(33, 26, 20, 0.75);
+}
+
+.village__grid {
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.village__frame {
+  overflow: hidden;
+  border-radius: 2px;
+  aspect-ratio: 4 / 5;
+}
+
+.village__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 780px) {
+  .village__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+  }
+}

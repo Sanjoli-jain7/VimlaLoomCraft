@@ -1,0 +1,798 @@
+.exh-page {
+  background: var(--color-paper);
+  overflow-x: hidden;
+}
+
+.exh-jaali {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='84'%3E%3Cg fill='none' stroke='%23A5824F' stroke-width='0.7' opacity='0.16'%3E%3Cpath d='M42 4 L74 42 L42 80 L10 42 Z'/%3E%3Ccircle cx='42' cy='42' r='16'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ============ 1. HERO ============ */
+.exh-hero {
+  position: relative;
+  height: 100svh;
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  color: var(--color-ivory);
+}
+
+.exh-hero__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: exhKenBurns 22s ease-in-out infinite alternate;
+}
+
+@keyframes exhKenBurns {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+.exh-hero__scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(23, 30, 51, 0.9) 0%,
+    rgba(23, 30, 51, 0.3) 45%,
+    rgba(23, 30, 51, 0.45) 100%
+  );
+}
+
+.exh-hero__top {
+  position: relative;
+  padding: clamp(7rem, 12vw, 9rem) clamp(1.5rem, 5vw, 4rem) 0;
+  text-align: center;
+}
+
+.exh-hero__eyebrow {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--color-brass);
+}
+
+.exh-hero__title {
+  margin-top: 1.2rem;
+  font-family: var(--font-accent);
+  font-weight: 600;
+  font-size: clamp(3rem, 9vw, 7rem);
+  line-height: 0.98;
+  letter-spacing: 0.01em;
+}
+
+.exh-hero__line {
+  margin: 1.4rem auto 0;
+  max-width: 32ch;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  color: var(--color-powder-blue);
+}
+
+.exh-hero__cue {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding-bottom: clamp(2rem, 5vw, 3rem);
+  font-size: 0.7rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(248, 243, 233, 0.8);
+}
+
+.exh-hero__cue-line {
+  width: 1px;
+  height: 34px;
+  background: linear-gradient(to bottom, rgba(248, 243, 233, 0.05), var(--color-brass));
+  animation: exhCuePulse 2.2s ease-in-out infinite;
+}
+
+@keyframes exhCuePulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+/* ============ SHARED: eyebrow / numbers ============ */
+.exh-eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-terracotta);
+}
+
+.exh-eyebrow--light {
+  color: var(--color-brass);
+}
+
+/* ============ 2. THE THREAD ============ */
+.exh-thread {
+  position: relative;
+  padding-block: clamp(3rem, 7vw, 4.5rem);
+  background: var(--color-ivory);
+}
+
+.exh-thread__head {
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto clamp(2rem, 5vw, 3rem);
+}
+
+.exh-thread__title {
+  margin-top: 0.5rem;
+  font-size: clamp(1.5rem, 3.4vw, 2.1rem);
+}
+
+.exh-thread-strip {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.exh-thread-strip__line {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 66px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(165, 130, 79, 0.55) 8%, rgba(165, 130, 79, 0.55) 92%, transparent);
+}
+
+.exh-thread-tile {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 160px;
+}
+
+.exh-thread-tile__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-brass);
+  margin-bottom: 0.9rem;
+  position: relative;
+  z-index: 2;
+}
+
+.exh-thread-tile__image {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--color-ivory);
+  outline: 1px solid rgba(165, 130, 79, 0.5);
+  box-shadow: 0 6px 16px rgba(62, 42, 32, 0.15);
+}
+
+.exh-thread-tile__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.exh-thread-tile__order {
+  margin-top: 0.8rem;
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: rgba(165, 130, 79, 0.75);
+}
+
+.exh-thread-tile__name {
+  margin-top: 0.15rem;
+  font-size: 1rem;
+}
+
+.exh-thread-tile__note {
+  margin-top: 0.4rem;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: rgba(33, 26, 20, 0.62);
+}
+
+@media (max-width: 780px) {
+  .exh-thread-strip {
+    flex-wrap: wrap;
+    row-gap: 2.5rem;
+    justify-content: center;
+  }
+  .exh-thread-strip__line {
+    display: none;
+  }
+  .exh-thread-tile {
+    flex: 0 0 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .exh-thread-tile {
+    flex: 0 0 42%;
+  }
+}
+
+
+/* ============ 3. RAW MATERIALS ============ */
+.exh-materials {
+  background-color: var(--color-cream);
+  padding-block: clamp(4rem, 10vw, 7rem);
+  position: relative;
+}
+
+.exh-materials__head {
+  max-width: 640px;
+}
+
+.exh-materials__title {
+  margin-top: 0.6rem;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.exh-materials__table {
+  position: relative;
+  margin-top: clamp(3rem, 8vw, 5rem);
+  height: clamp(420px, 48vw, 560px);
+}
+
+.exh-swatch {
+  position: absolute;
+  width: clamp(150px, 18vw, 220px);
+  aspect-ratio: 4 / 5;
+  border: 6px solid var(--color-ivory);
+  box-shadow: 0 18px 34px rgba(62, 42, 32, 0.22);
+  cursor: pointer;
+  transition: transform 0.5s var(--ease-editorial), z-index 0.1s;
+  overflow: hidden;
+}
+
+.exh-swatch:hover,
+.exh-swatch:focus-within {
+  z-index: 20 !important;
+  transform: scale(1.12) rotate(0deg) !important;
+}
+
+.exh-swatch__media {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--color-teak);
+}
+
+.exh-swatch__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.5s var(--ease-editorial);
+  filter: saturate(0.85);
+}
+
+.exh-swatch:hover .exh-swatch__media img,
+.exh-swatch:focus-within .exh-swatch__media img {
+  filter: saturate(1.1);
+}
+
+.exh-swatch__placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: rgba(248, 243, 233, 0.65);
+}
+
+.exh-swatch__label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(23, 30, 51, 0.85), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s var(--ease-editorial);
+}
+
+.exh-swatch:hover .exh-swatch__label,
+.exh-swatch:focus-within .exh-swatch__label {
+  opacity: 1;
+}
+
+.exh-swatch__name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--color-ivory);
+}
+
+.exh-swatch__line {
+  margin-top: 0.3rem;
+  font-size: 0.82rem;
+  color: rgba(248, 243, 233, 0.8);
+}
+
+@media (max-width: 640px) {
+  .exh-materials__table {
+    height: auto;
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .exh-swatch {
+    position: static !important;
+    width: 100%;
+    transform: none !important;
+  }
+  .exh-swatch__label {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(23, 30, 51, 0.7), transparent 65%);
+  }
+}
+
+/* ============ 4. THE PALETTE ============ */
+.exh-palette {
+  background: var(--color-indigo-deep);
+  padding-block: clamp(4rem, 10vw, 7rem);
+  color: var(--color-ivory);
+}
+
+.exh-palette__head {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.exh-palette__title {
+  margin-top: 0.6rem;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.exh-palette__strip {
+  margin-top: clamp(3rem, 7vw, 4.5rem);
+  display: flex;
+  height: clamp(320px, 40vw, 440px);
+  border: 1px solid rgba(165, 130, 79, 0.4);
+}
+
+.exh-swatch-bar {
+  position: relative;
+  flex: 1;
+  cursor: pointer;
+  overflow: hidden;
+  transition: flex 0.6s var(--ease-editorial);
+  display: flex;
+  align-items: flex-end;
+  border-right: 1px solid rgba(23, 30, 51, 0.25);
+}
+
+.exh-swatch-bar:last-child {
+  border-right: none;
+}
+
+.exh-swatch-bar:hover,
+.exh-swatch-bar:focus-within {
+  flex: 4;
+}
+
+.exh-swatch-bar__name {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 1.2rem 0.6rem;
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: 1.05rem;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.85);
+  mix-blend-mode: overlay;
+}
+
+.exh-swatch-bar__reveal {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.4rem;
+  opacity: 0;
+  transition: opacity 0.4s var(--ease-editorial) 0.15s;
+}
+
+.exh-swatch-bar:hover .exh-swatch-bar__reveal,
+.exh-swatch-bar:focus-within .exh-swatch-bar__reveal {
+  opacity: 1;
+}
+
+.exh-swatch-bar:hover .exh-swatch-bar__name,
+.exh-swatch-bar:focus-within .exh-swatch-bar__name {
+  display: none;
+}
+
+.exh-swatch-bar__reveal-name {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.exh-swatch-bar__origin {
+  margin-top: 0.3rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.exh-swatch-bar__note {
+  margin-top: 0.6rem;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 26ch;
+}
+
+@media (max-width: 780px) {
+  .exh-palette__strip {
+    flex-direction: column;
+    height: auto;
+  }
+  .exh-swatch-bar {
+    height: 64px;
+    flex: none !important;
+  }
+  .exh-swatch-bar__name {
+    writing-mode: horizontal-tb;
+    transform: none;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .exh-swatch-bar__reveal {
+    position: static;
+    opacity: 1;
+    padding: 0.8rem 1rem 1rem;
+    display: none;
+  }
+  .exh-swatch-bar:hover .exh-swatch-bar__reveal,
+  .exh-swatch-bar:focus-within .exh-swatch-bar__reveal {
+    display: flex;
+  }
+  .exh-swatch-bar:hover,
+  .exh-swatch-bar:focus-within {
+    height: auto;
+  }
+}
+
+/* ============ 5. THE LOOM (sticky split-screen) ============ */
+.exh-loom {
+  background: var(--color-ivory);
+  padding-block: clamp(3rem, 8vw, 5rem);
+}
+
+.exh-loom__head {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto clamp(2.5rem, 6vw, 4rem);
+}
+
+.exh-loom__title {
+  margin-top: 0.6rem;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.exh-loom__split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 6vw, 4rem);
+}
+
+.exh-loom__media {
+  position: sticky;
+  top: 6rem;
+  align-self: start;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 1px solid rgba(165, 130, 79, 0.5);
+  height: fit-content;
+}
+
+.exh-loom__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.exh-loom__stages {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(5rem, 14vw, 9rem);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.exh-loom__stage {
+  padding-left: 1.6rem;
+  border-left: 2px solid rgba(165, 130, 79, 0.4);
+}
+
+.exh-loom__stage-title {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+  color: var(--color-terracotta);
+}
+
+.exh-loom__stage-note {
+  margin-top: 0.9rem;
+  max-width: 38ch;
+  font-weight: 500;
+  color: rgba(33, 26, 20, 0.75);
+}
+
+@media (max-width: 780px) {
+  .exh-loom__split {
+    grid-template-columns: 1fr;
+  }
+  .exh-loom__media {
+    position: static;
+  }
+  .exh-loom__stages {
+    gap: 2.5rem;
+    padding-top: 0;
+  }
+}
+
+/* ============ 6. MEET THE HANDS ============ */
+.exh-hands {
+  background: var(--color-cream);
+  padding-block: clamp(4rem, 10vw, 7rem);
+  overflow: hidden;
+}
+
+.exh-hands__head {
+  max-width: 640px;
+}
+
+.exh-hands__title {
+  margin-top: 0.6rem;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+}
+
+.exh-hands__strip {
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  display: flex;
+  gap: 1.4rem;
+  overflow-x: auto;
+  padding-bottom: 1.5rem;
+  scroll-snap-type: x proximity;
+}
+
+.exh-hand-card {
+  flex: 0 0 clamp(260px, 34vw, 380px);
+  scroll-snap-align: start;
+}
+
+.exh-hand-card__image {
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  border: 1px solid rgba(165, 130, 79, 0.45);
+}
+
+.exh-hand-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.exh-hand-card__caption {
+  margin-top: 1rem;
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--color-ink);
+  max-width: 22ch;
+}
+
+/* ============ 8. FROM HAND TO HOME ============ */
+.exh-h2h {
+  background: var(--color-ivory);
+  padding-block: clamp(4rem, 10vw, 7rem);
+}
+
+.exh-h2h__title {
+  text-align: center;
+  font-family: var(--font-accent);
+  font-weight: 600;
+  font-size: clamp(1.6rem, 4.4vw, 2.8rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.6rem, 2vw, 1.5rem);
+  flex-wrap: wrap;
+  color: var(--color-ink);
+}
+
+.exh-h2h__arrow {
+  color: var(--color-brass);
+  font-size: 0.7em;
+}
+
+.exh-h2h__grid {
+  margin-top: clamp(3rem, 7vw, 5rem);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.4rem;
+}
+
+.exh-h2h__item {
+  position: relative;
+}
+
+.exh-h2h__item:nth-child(2) {
+  margin-top: 2.5rem;
+}
+.exh-h2h__item:nth-child(3) {
+  margin-top: -1rem;
+}
+.exh-h2h__item:nth-child(4) {
+  margin-top: 1.5rem;
+}
+
+.exh-h2h__image {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 1px solid rgba(165, 130, 79, 0.5);
+}
+
+.exh-h2h__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.exh-h2h__label {
+  margin-top: 0.8rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-terracotta);
+}
+
+@media (max-width: 780px) {
+  .exh-h2h__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .exh-h2h__item:nth-child(n) {
+    margin-top: 0;
+  }
+}
+
+/* ============ 9. CUSTOM CRAFT ============ */
+.exh-custom {
+  position: relative;
+  background-color: var(--color-teak);
+  padding-block: clamp(5rem, 14vw, 9rem);
+  color: var(--color-ivory);
+  text-align: center;
+  overflow: hidden;
+}
+
+.exh-custom::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='none' stroke='%23A5824F' stroke-width='0.6' opacity='0.14'%3E%3Cpath d='M60 6 L114 60 L60 114 L6 60 Z'/%3E%3C/g%3E%3C/svg%3E");
+  animation: exhDrift 40s linear infinite;
+}
+
+@keyframes exhDrift {
+  from { background-position: 0 0; }
+  to { background-position: 240px 240px; }
+}
+
+.exh-custom__inner {
+  position: relative;
+}
+
+.exh-custom__eyebrow {
+  color: var(--color-brass);
+}
+
+.exh-custom__title {
+  margin-top: 1rem;
+  font-family: var(--font-accent);
+  font-weight: 600;
+  font-size: clamp(2.4rem, 7vw, 5rem);
+  line-height: 1.05;
+}
+
+.exh-custom__body {
+  margin: 1.4rem auto 0;
+  max-width: 46ch;
+  font-weight: 500;
+  color: rgba(248, 243, 233, 0.82);
+}
+
+.exh-custom__aspects {
+  margin-top: 2.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.exh-custom__aspect {
+  padding: 0.5rem 1.1rem;
+  border: 1px solid rgba(165, 130, 79, 0.55);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-brass);
+}
+
+/* ============ 10. FINAL CTA ============ */
+.exh-final {
+  position: relative;
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: var(--color-ivory);
+}
+
+.exh-final__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.exh-final__scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 12, 22, 0.9) 0%, rgba(10, 12, 22, 0.75) 100%);
+}
+
+.exh-final__content {
+  position: relative;
+  max-width: 720px;
+  padding-inline: 1.5rem;
+}
+
+.exh-final__title {
+  font-family: var(--font-accent);
+  font-weight: 600;
+  font-size: clamp(2.2rem, 5.6vw, 3.8rem);
+  line-height: 1.15;
+}
+
+.exh-final__body {
+  margin-top: 1.1rem;
+  font-weight: 500;
+  color: var(--color-powder-blue);
+}
+
+.exh-final__actions {
+  margin-top: 2.2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
