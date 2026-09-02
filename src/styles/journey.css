@@ -101,16 +101,19 @@
   object-position: center center;
 }
 .journey__img--weave {
-  object-position: center 20%;
+  object-position: center 30%;
 }
 .journey__img--walk {
   object-position: center 75%;
 }
 .journey__img--eat {
-  object-position: center 60%;
+  object-position: center 40%;
 }
 .journey__img--rest {
   object-position: center 65%;
+}
+.journey__img--remember {
+  object-position: center 45%;
 }
 
 .journey__step {

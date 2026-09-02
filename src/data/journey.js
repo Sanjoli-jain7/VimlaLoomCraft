@@ -24,7 +24,7 @@ export const journeySteps = [
     step: 'Weave',
     line: 'Your hands on the warp, guided by a master weaver.',
     image:
-      '/images/weave-dyeing-demo.jpg',
+      '/images/journey-weave-group-loom.jpg',
   },
   {
     step: 'Walk',
@@ -36,7 +36,7 @@ export const journeySteps = [
     step: 'Eat',
     line: 'A home-cooked Rajasthani thali, shared at one table.',
     image:
-      '/images/journey-eat-thali.jpg',
+      '/images/journey-eat-thali-dining.jpg',
   },
   {
     step: 'Rest',
@@ -48,6 +48,6 @@ export const journeySteps = [
     step: 'Remember',
     line: 'A rug of your own, carrying the day home with you.',
     image:
-      '/images/finishing-rug-terrace.jpg',
+      '/images/journey-remember-dhurrie-relaxation.jpg',
   },
 ];

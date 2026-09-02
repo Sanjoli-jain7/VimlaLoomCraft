@@ -7,7 +7,7 @@ export const craftSteps = [
     name: 'Spinning',
     note: 'Raw wool drawn into even, workable yarn.',
     image:
-      '/images/spinning-artisan.jpg',
+      '/images/craft-stage-spinning-raw-wool.jpg',
   },
   {
     order: '02',
@@ -21,7 +21,7 @@ export const craftSteps = [
     name: 'Washing',
     note: 'Cleaned and softened before it ever touches a loom.',
     image:
-      '/images/washing-splash.jpg',
+      '/images/craft-stage-washing-indigo-rugs.jpg',
   },
   {
     order: '04',
