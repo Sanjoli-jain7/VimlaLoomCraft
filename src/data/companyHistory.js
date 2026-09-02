@@ -3,7 +3,7 @@
 // sourced from Vimla International's own company profile document.
 
 export const heritageIntro = {
-  eyebrow: 'Our Heritage',
+  eyebrow: 'Who We Are',
   headline: 'The story of Vimla International.',
   body: 'A family craft house in Jaipur, and the hands that built it — named for the woman who inspired it all.',
 };
@@ -69,7 +69,7 @@ export const archivalPhotos = {
   eyebrow: 'In the Workshop',
   headline: 'The story, in photographs.',
   images: [
-    { src: '/images/archive-rugs-drying.jpg', alt: 'Finished dhurries drying in the sun at the Vimla workshop' },
+    { src: '/images/village-guests-jute-rugs-stack.jpg', alt: 'Visitors sitting on handwoven jute and cotton rugs in the Vimla workshop' },
     { src: '/images/archive-weaver-loom.jpg', alt: 'An artisan weaving a patterned rug on a traditional loom' },
     { src: '/images/archive-chhatri-domes.jpg', alt: 'The domed chhatris near the Vimla workshop in Jaipur' },
     { src: '/images/archive-rooftop-turret.jpg', alt: 'The blue-and-white haveli rooftop, framed by trees' },
@@ -77,9 +77,9 @@ export const archivalPhotos = {
 };
 
 export const growthSection = {
-  eyebrow: 'Where It\u2019s Going',
+  eyebrow: 'Where It’s Going',
   headline: 'From a single loom to a name trusted worldwide.',
-  body: 'What began with one loom and two weavers has grown into an operation of thousands of looms and more than a thousand skilled artisans. Under Nitesh Kumar Jain, Vimla International has carried that same craftsmanship into the global market \u2014 shipping to clients abroad while staying rooted in the values it was built on.',
-  image: '/images/weaving-loom.jpg',
-  imageAlt: 'Rows of looms inside the Vimla International workshop',
+  body: 'What began with one loom and two weavers has grown into an operation of thousands of looms and more than a thousand skilled artisans. Under Nitesh Kumar Jain, Vimla International has carried that same craftsmanship into the global market — shipping to clients abroad while staying rooted in the values it was built on.',
+  image: '/images/village-haveli-living-room-frescoes.jpg',
+  imageAlt: 'Visitors gathered in the heritage haveli courtyard living room at Vimla International',
 };

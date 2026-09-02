@@ -20,12 +20,12 @@ export const villageSection = {
       alt: 'A local village master artisan shaping clay pottery on the wheel with a visitor learning',
     },
     {
-      src: '/images/architecture-detail-2.jpg',
-      alt: 'Hand-painted blue floral motifs on the haveli\u2019s courtyard walls',
+      src: '/images/village-haveli-living-room-frescoes.jpg',
+      alt: 'Guests garlanded with marigolds relaxing in the heritage haveli living room with blue-and-white frescoes',
     },
     {
-      src: '/images/finishing-rug-terrace.jpg',
-      alt: 'A finished dhurrie laid out on the terrace, backed by the Aravalli hills',
+      src: '/images/village-guests-jute-rugs-stack.jpg',
+      alt: 'Visitors sitting cross-legged on a stack of handwoven natural jute rugs',
     },
   ],
 };

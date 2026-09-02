@@ -6,7 +6,7 @@ export const siteConfig = {
   brandLocation: 'Jaipur \u2022 Rajasthan',
   parentBrand: 'Vimla International',
   navLinks: [
-    { label: 'Experience', href: '/experience' },
+    { label: 'Who We Are', href: '/experience' },
     { label: 'Craft', href: '/craft' },
     { label: 'Village', href: '/village' },
     { label: 'Gallery', href: '/gallery' },
@@ -24,7 +24,7 @@ export const siteConfig = {
     headline: 'Crafted in Jaipur. Rooted in tradition.',
     subheading:
       'Timeless textiles and handmade creations, woven with heritage and crafted with care.',
-    primaryCta: { label: 'Enter the Experience', href: '/experience' },
+    primaryCta: { label: 'Who We Are', href: '/experience' },
     secondaryCta: { label: 'Plan Your Visit', href: '/visit' },
     image: '/images/home-hero-haveli-sunset.jpg',
     imageAlt:
