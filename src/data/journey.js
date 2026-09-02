@@ -6,19 +6,19 @@ export const journeySteps = [
     step: 'Arrive',
     line: 'Through the teak archway, into the courtyard.',
     image:
-      '/images/arrive-rooftop-courtyard.jpg',
+      '/images/journey-arrive-archway.jpg',
   },
   {
     step: 'Welcome',
     line: 'Chai in hand, the family tells you their story.',
     image:
-      '/images/journey-welcome-garlands.jpg',
+      '/images/journey-welcome-traditional-dance.jpg',
   },
   {
     step: 'Discover',
     line: 'A walk through the workshop, loom by loom.',
     image:
-      '/images/craft-hands-learning.jpg',
+      '/images/journey-discover-showroom.jpg',
   },
   {
     step: 'Weave',

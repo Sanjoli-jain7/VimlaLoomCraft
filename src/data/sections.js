@@ -6,8 +6,8 @@ export const storySection = {
     'No rug arrives here finished. You will not simply look at one.',
     'You will meet the hands that made it, the dye pots it passed through, and the family whose home it was woven in — the people, the process, the patience, and the village behind every knot.',
   ],
-  image: '/images/visitors-loom-hall.jpg',
-  imageAlt: 'Visitors gathered around a working loom inside the Vimla weaving hall',
+  image: '/images/story-museum-craft-house.jpg',
+  imageAlt: 'Guests seated in the vibrant Vimla showroom surrounded by handmade dhurries, textiles, and decorative cushions',
 };
 
 export const villageSection = {

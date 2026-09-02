@@ -26,9 +26,9 @@ export const siteConfig = {
       'Timeless textiles and handmade creations, woven with heritage and crafted with care.',
     primaryCta: { label: 'Enter the Experience', href: '/experience' },
     secondaryCta: { label: 'Plan Your Visit', href: '/visit' },
-    image: '/images/vimla-doorway-hero.jpg',
+    image: '/images/home-hero-haveli-sunset.jpg',
     imageAlt:
-      'The carved wooden doorway of the Vimla International haveli in Jaipur, hung with handwoven bags and framed by blue-and-white fresco work, with rugs and cushions displayed below',
+      'The white and blue painted Vimla haveli with Aravalli hills in the background under a sunset sky in Jaipur, Rajasthan',
   },
 };
 

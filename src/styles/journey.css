@@ -92,13 +92,13 @@
    distorts or stretches the source photograph. Add a new rule here
    any time a step's photo changes and needs a different focus. */
 .journey__img--arrive {
-  object-position: center 42%;
+  object-position: center 25%;
 }
 .journey__img--welcome {
-  object-position: center 55%;
+  object-position: center 32%;
 }
 .journey__img--discover {
-  object-position: center 40%;
+  object-position: center center;
 }
 .journey__img--weave {
   object-position: center 20%;
