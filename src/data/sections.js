@@ -16,8 +16,8 @@ export const villageSection = {
   body: 'The craft doesn\u2019t end at the loom. Skeins dry in the courtyard, hand-painted blue motifs trail across every wall, and finished pieces are laid out on the terrace against the hills — a way of life the rugs are woven from.',
   images: [
     {
-      src: '/images/yarn-drying-courtyard.jpg',
-      alt: 'Hand-dyed yarn drying in the courtyard at Vimla Loom Crafts',
+      src: '/images/village-pottery-wheel-learning.jpg',
+      alt: 'A local village master artisan shaping clay pottery on the wheel with a visitor learning',
     },
     {
       src: '/images/architecture-detail-2.jpg',

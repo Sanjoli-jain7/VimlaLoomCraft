@@ -14,7 +14,7 @@ export const craftSteps = [
     name: 'Dyeing',
     note: 'Yarn steeped in colour, drying in the sun.',
     image:
-      '/images/dyeing-indigo.jpg',
+      '/images/craft-stage-dyeing-indigo-vat.jpg',
   },
   {
     order: '03',
@@ -28,14 +28,14 @@ export const craftSteps = [
     name: 'Weaving',
     note: 'Weft over warp, row by patient row.',
     image:
-      '/images/weaving-loom.jpg',
+      '/images/craft-stage-weaving-hands.jpg',
   },
   {
     order: '05',
     name: 'Tufting',
     note: 'Pile built by hand, gun and needle both.',
     image:
-      '/images/tufting-finishing.jpg',
+      '/images/craft-stage-tufting-gun.jpg',
   },
   {
     order: '06',
@@ -49,6 +49,6 @@ export const craftSteps = [
     name: 'Finishing',
     note: 'Trimmed, washed again, and readied to travel.',
     image:
-      '/images/finishing-rug-terrace.jpg',
+      '/images/craft-stage-finishing-shearing.jpg',
   },
 ];
