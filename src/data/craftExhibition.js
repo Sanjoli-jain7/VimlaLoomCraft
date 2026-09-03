@@ -70,17 +70,17 @@ export const rawMaterials = [
   {
     name: 'Wool',
     line: 'Softness begins at the fibre.',
-    image: '/images/craft-material-yarn.jpg',
+    image: '/images/raw-material-wool-swatches-comb.jpg',
   },
   {
     name: 'Jute',
     line: 'Earth-born, textured and enduring.',
-    image: '/images/gallery/gallery-round-jute-rug.jpg',
+    image: '/images/raw-material-jute-trimming.jpg',
   },
   {
     name: 'Cotton',
     line: 'Lightness woven into everyday living.',
-    image: '/images/craft-material-cotton.jpg',
+    image: '/images/raw-material-cotton-yarn-balls.jpg',
   },
   {
     name: 'Silk',
@@ -90,7 +90,7 @@ export const rawMaterials = [
   {
     name: 'Hemp & Loom',
     line: 'Coarse, strong warp on traditional wooden looms.',
-    image: '/images/craft-loom-weaving.jpg',
+    image: '/images/raw-material-hemp-loom-warp.jpg',
   },
 ];
 
@@ -109,8 +109,8 @@ export const palette = [
 // "Meet the Hands"
 export const artisanGallery = [
   {
-    image: '/images/craft-hands-quality.jpg',
-    alt: 'Two people examining a finished textile together in the showroom',
+    image: '/images/craft-hands-behind-pattern-group.jpg',
+    alt: 'Master Rajasthani craftswomen and visitors gathered in the weaving workshop hallway',
     caption: 'The Hands Behind the Pattern',
   },
   {
