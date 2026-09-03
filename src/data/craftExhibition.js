@@ -114,23 +114,23 @@ export const artisanGallery = [
     caption: 'The Hands Behind the Pattern',
   },
   {
-    image: '/images/craft-hands-dyeing.jpg',
-    alt: 'An artisan’s hands lifting yarn from the dye vat as visitors watch',
+    image: '/images/craft-generations-of-knowledge-family.jpg',
+    alt: 'The host in a red and gold saree standing proudly with a visiting international family in the haveli',
     caption: 'Generations of Knowledge',
   },
   {
-    image: '/images/craft-hands-learning.jpg',
-    alt: 'A guide explaining the spinning wheels to a group of visitors',
+    image: '/images/craft-learned-by-watching-showroom.jpg',
+    alt: 'Garlanded visitors exploring handwoven rugs, dhurries, and shade swatches in the upper showroom',
     caption: 'Craft is Learned by Watching',
   },
   {
-    image: '/images/craft-hands-washing.jpg',
-    alt: 'An artisan washing finished dhurries by hand on the workshop floor',
+    image: '/images/craft-human-touch-colour-matching.jpg',
+    alt: 'Artisan meticulously matching yarn pompom colours and shades over a handwoven jute rug with notes and calculations',
     caption: 'Every Piece Carries a Human Touch',
   },
   {
-    image: '/images/craft-loom-weaving.jpg',
-    alt: 'A weaver knotting a geometric dhurrie on the traditional loom',
+    image: '/images/craft-patience-row-by-row-showroom.jpg',
+    alt: 'Guests relaxing in the showroom while examining hand-tufted modern geometric rugs and craft lampshades',
     caption: 'Patience, Row by Row',
   },
 ];
