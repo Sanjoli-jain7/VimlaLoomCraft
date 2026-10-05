@@ -12,6 +12,26 @@ export const galleryIntro = {
 
 export const galleryPhotos = [
   {
+    src: '/images/gallery/gallery-rooftop-aravalli-terrace.jpg',
+    alt: 'Visitors with marigold garlands enjoying the haveli rooftop terrace with the lush green Aravalli hills in the backdrop',
+    caption: 'Rooftop at the Haveli',
+  },
+  {
+    src: '/images/gallery/gallery-haveli-chhatri-architecture.jpg',
+    alt: 'White-and-blue painted haveli chhatris and ornate jharokhas against the Aravalli mountains',
+    caption: 'Haveli Architecture',
+  },
+  {
+    src: '/images/gallery/gallery-garden-chai-relaxation.jpg',
+    alt: 'Guests relaxing with hot chai and snacks in the haveli garden lawn',
+    caption: 'Chai in the Garden',
+  },
+  {
+    src: '/images/gallery/gallery-village-children-workshop.jpg',
+    alt: 'Visiting guests smiling with local village school children at the weaving pit loom',
+    caption: 'Joy in the Workshop',
+  },
+  {
     src: '/images/gallery/gallery-round-rug-interior.jpg',
     alt: 'A round braided jute rug styled in a bedroom corner',
     caption: 'Braided Jute',

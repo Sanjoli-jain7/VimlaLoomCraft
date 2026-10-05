@@ -6,8 +6,8 @@ export const routeStops = ['Delhi', 'Agra', 'Vimla Loom Crafts', 'Jaipur'];
 // Drop the custom map graphic in /public/images/ and point this at it
 // (e.g. '/images/vimla-route-map.jpg'). Leave as null to show the
 // placeholder frame instead.
-export const mapImage = '/images/journey-to-loom-map.jpg';
-export const mapImageAlt = 'Illustrated map of the journey to Vimla Loom Crafts, showing the starting point, factory visit, village pour, fort and rest stops through Rajasthan';
+export const mapImage = '/images/map-golden-triangle-vimla.jpg';
+export const mapImageAlt = 'Your Golden Triangle Journey to Vimla Rugs (Vimla International) map showing the Aravalli hills, Delhi-Agra highway, and points of interest';
 
 export const nearbyLandmarks = [
   { name: 'Hawa Mahal', distance: '~38 km', icon: 'hawamahal', note: 'The Palace of Winds' },

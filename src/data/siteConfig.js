@@ -10,7 +10,7 @@ export const siteConfig = {
     { label: 'Craft', href: '/craft' },
     { label: 'Village', href: '/village' },
     { label: 'Gallery', href: '/gallery' },
-    { label: 'Visit', href: '/visit' },
+    { label: 'Experience', href: '/visit' },
   ],
   // Vimla Retreats will eventually live on its own domain.
   // Swap this URL when it's ready — nothing else needs to change.
@@ -25,7 +25,7 @@ export const siteConfig = {
     subheading:
       'Timeless textiles and handmade creations, woven with heritage and crafted with care.',
     primaryCta: { label: 'Who We Are', href: '/experience' },
-    secondaryCta: { label: 'Plan Your Visit', href: '/visit' },
+    secondaryCta: { label: 'Experience', href: '/visit' },
     image: '/images/home-hero-haveli-sunset.jpg',
     imageAlt:
       'The white and blue painted Vimla haveli with Aravalli hills in the background under a sunset sky in Jaipur, Rajasthan',

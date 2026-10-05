@@ -22,7 +22,7 @@ function VisitHero() {
       />
       <div className="visit-hero__scrim" aria-hidden="true" />
       <div className="visit-hero__content container reveal">
-        <span className="eyebrow">Visit Us</span>
+        <span className="eyebrow">The Experience</span>
         <h1 className="visit-hero__title">Come Experience Vimla</h1>
         <p className="visit-hero__sub">Jaipur, Rajasthan</p>
       </div>
