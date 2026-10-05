@@ -138,10 +138,10 @@ export const artisanGallery = [
 // "Patterns" — interactive textile wall.
 // "From Hand to Home"
 export const handToHome = [
-  { label: 'Rugs', image: '/images/gallery/gallery-round-rug-interior.jpg' },
-  { label: 'Cushions', image: '/images/gallery/gallery-bed-blue-pillows.jpg' },
-  { label: 'Bags', image: '/images/gallery/gallery-bags-on-tree.jpg' },
-  { label: 'Baskets', image: '/images/gallery/gallery-basket.jpg' },
+  { label: 'Thread', image: '/images/craft-h2h-1-thread-yarn.jpg' },
+  { label: 'Weave', image: '/images/craft-h2h-2-loom-weave.jpg' },
+  { label: 'Object', image: '/images/craft-h2h-3-finished-dhurrie.jpg' },
+  { label: 'Home', image: '/images/craft-h2h-4-bedroom-interior.jpg' },
 ];
 
 export const customCraft = {
