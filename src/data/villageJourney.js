@@ -16,11 +16,11 @@ export const villageHero = {
 export const beyondLoom = {
   eyebrow: 'Introduction',
   headline: 'Beyond the Loom',
-  body: 'Step beyond the finished rug and discover the hands, traditions and places that bring every creation to life. A visit here moves past the showroom — into workshops where crafts are still shaped by hand, among artisans who carry generations of knowledge, and through a village where heritage isn\u2019t on display, it\u2019s lived in.',
+  body: 'Step beyond the finished rug and discover the hands, traditions and places that bring every creation to life. A visit here moves past the showroom — into workshops where crafts are still shaped by hand, among artisans who carry generations of knowledge, and through a village where heritage isn’t on display, it’s lived in.',
   images: [
-    { src: '/images/finishing-rug-terrace.jpg', alt: 'Handwoven dhurries drying on a terrace overlooking the Aravalli hills' },
-    { src: '/images/visitors-dyeing-vats.jpg', alt: 'Visitors watching a rug being finished on the workshop terrace' },
-    { src: '/images/architecture-detail-3.jpg', alt: 'The haveli workshop\u2019s rooftop and blue-and-white fresco work against the Aravalli hills' },
+    { src: '/images/village-beyond-loom-chhatri-pavilion.jpg', alt: 'Historical carved stone pavilion chhatri in the village' },
+    { src: '/images/village-beyond-loom-feeding-cow.jpg', alt: 'A visitor connecting with village life and feeding a sacred cow during the village walk' },
+    { src: '/images/village-beyond-loom-open-gypsy.jpg', alt: 'Father and child on the open-top vintage Gypsy jeep along the village country road' },
   ],
 };
 
@@ -40,7 +40,7 @@ export const pottery = {
     { src: '/images/pottery-visitor-shaping.jpg', alt: 'A visitor working clay on the wheel alongside a potter' },
     { src: '/images/pottery-visitor-hands.jpg', alt: 'A visitor with clay-covered hands laughing beside the potter' },
   ],
-  hoverNote: 'Every piece carries the small variations of a hand-turned wheel \u2014 that\u2019s the point, not a flaw.',
+  hoverNote: 'Every piece carries the small variations of a hand-turned wheel — that’s the point, not a flaw.',
 };
 
 export const lakBangles = {
@@ -54,12 +54,12 @@ export const lakBangles = {
     { title: 'Finishing', note: 'Stones, mirrors or gold thread are set into the surface.' },
   ],
   images: [
-    { src: '/images/lak-bangles-heating-mold.jpg', alt: 'A cloth-wrapped wooden mould heating over coals, used to shape the lak bangle' },
-    { src: '/images/lak-bangles-colouring-coals.jpg', alt: 'A hand-painted lak bangle held over a bed of coals to keep the lak workable' },
+    { src: '/images/village-lak-bangles-making-artisan.jpg', alt: 'A master artisan shaping, rolling, and detailing colourful lak bangles on a stone slab' },
+    { src: '/images/village-lak-bangles-heating-shaping.jpg', alt: 'An artisan heating and forming lak bangles over a charcoal stove' },
     { src: '/images/lak-bangles-workbench.jpg', alt: 'Coloured lak rods and finished bangles laid out on the workbench beside the heating machine' },
     { src: '/images/lak-bangles-finished.jpg', alt: 'A pair of finished braided lak bangles worn on the wrist' },
   ],
-  hoverNote: 'The colour is worked in while the lak is still warm \u2014 minutes, before it hardens for good.',
+  hoverNote: 'The colour is worked in while the lak is still warm — minutes, before it hardens for good.',
 };
 
 // Easy to edit — add or remove entries and the horizontal strip
@@ -97,7 +97,7 @@ export const goldenTriangle = {
   // The farmhouse\u2013factory\u2013village\u2013fort\u2013rest illustration doesn\u2019t fit this
   // section \u2014 it needs a proper Delhi \u2192 Agra \u2192 Jaipur \u2192 Vimla route map.
   // Drop the new one in /public/images/ and point mapImage at it.
-  mapImage: null,
+  mapImage: '/images/map-golden-triangle-vimla.jpg',
   mapAlt: 'Illustrated map of the Golden Triangle route from Delhi through Agra and Jaipur to Vimla Loom Crafts',
 };
 
