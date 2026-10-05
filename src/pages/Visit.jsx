@@ -115,8 +115,8 @@ export default function Visit() {
             eyebrow={pickupInfo.eyebrow}
             headline={pickupInfo.headline}
             body={pickupInfo.body}
-            image="/images/haveli-rooftop-turret.jpg"
-            imageAlt="The Vimla haveli's carved rooftop turret, seen from the pickup courtyard"
+            image={pickupInfo.image}
+            imageAlt={pickupInfo.imageAlt}
           />
         </section>
 

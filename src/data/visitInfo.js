@@ -5,16 +5,18 @@ export const pickupInfo = {
   eyebrow: 'Getting Here',
   headline: 'Pickup Included',
   body:
-    'Pickup is included with every experience, from our designated pickup point — and you\u2019ll be returned there once your visit ends. Individual hotel pickup across Jaipur is not available.',
+    'Pickup is included with every experience, from our designated pickup point — and you’ll be returned there once your visit ends. Individual hotel pickup across Jaipur is not available.',
+  image: '/images/visit-pickup-village-group.jpg',
+  imageAlt: 'International visitors on a scenic village tour on arrival in Banskho',
 };
 
 export const transportInfo = {
   eyebrow: 'The Journey',
   headline: 'Arrive the Rajasthani way.',
   body:
-    'Both a vintage car and an open-top Gypsy are part of the experience \u2014 a short, scenic leg of the journey before you ever reach the workshop gate.',
+    'Both a vintage car and an open-top Gypsy are part of the experience — a short, scenic leg of the journey before you ever reach the workshop gate.',
   images: [
-    { src: '/images/visit-gypsy-jeep.jpg', alt: 'The open-top vintage Gypsy jeep used for the journey to the workshop' },
+    { src: '/images/visit-vintage-ambassador-car.jpg', alt: 'The classic light-blue vintage Ambassador car parked inside the haveli portico' },
   ],
 };
 
@@ -23,8 +25,8 @@ export const welcomeInfo = {
   headline: 'Welcome, the Rajasthani way.',
   body: 'Every guest is received with the same warmth, in full:',
   items: ['Garland', 'Flower shower', 'Tilak', 'Folk music', 'Traditional Rajasthani welcome', 'Welcome drink'],
-  image: '/images/journey-welcome-garlands.jpg',
-  imageAlt: 'Guests garlanded with marigolds during the traditional welcome at Vimla International',
+  image: '/images/visit-rajasthani-welcome-garland.jpg',
+  imageAlt: 'An artisan host garlanding a visitor during the traditional Rajasthani welcome',
 };
 
 export const experienceOptions = [

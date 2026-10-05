@@ -11,15 +11,15 @@ export const visitorTypes = {
     key: 'indian',
     label: 'Indian Visitor',
     line: 'Discover the craft closer to home.',
-    image: '/images/visitors-dyeing-hall-1.jpg',
-    imageAlt: 'A domestic student group touring the dyeing hall with a Vimla guide',
+    image: '/images/visit-indian-visitors-doorway.jpg',
+    imageAlt: 'A large group of Indian students and visitors outside the grand wooden haveli doorway',
   },
   international: {
     key: 'international',
     label: 'International Visitor',
     line: 'Experience Rajasthan through its living crafts.',
-    image: '/images/journey-welcome-garlands.jpg',
-    imageAlt: 'International guests garlanded for a traditional welcome at the workshop courtyard',
+    image: '/images/visit-international-visitors-arch.jpg',
+    imageAlt: 'Garlanded international family and visitors framed inside the frescoed haveli courtyard arch',
   },
 };
 
